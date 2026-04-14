@@ -22,6 +22,8 @@ copy .env.example .env
 
 The default `MOCK_MODE=true` path is intentional for reliable local grading without API keys or GPU access. The real OpenAI and Replicate code paths are implemented and activate when the required environment variables are present.
 
+`CritiqueAgent` uses CLIP automatically when the model is already cached locally. Set `CLIP_ALLOW_DOWNLOAD=true` to allow HuggingFace model downloads; otherwise it uses a deterministic fallback signal so offline grading remains reliable.
+
 ## Run the Workflow
 
 ```powershell

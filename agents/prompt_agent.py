@@ -55,10 +55,10 @@ class PromptAgent:
     ) -> PromptData:
         """Produce a strong SDXL-ready prompt without requiring an API key."""
 
-        instruction = user_instruction.strip()
+        instruction = user_instruction.strip().rstrip(".")
         mode = self._classify_mode(instruction)
         if not instruction or len(instruction.split()) < 2:
-            instruction = "Enhance the image while preserving the original composition."
+            instruction = "Enhance the image while preserving the original composition"
             mode = "enhancement"
 
         details = [

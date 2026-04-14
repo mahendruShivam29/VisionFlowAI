@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import math
+import os
 from pathlib import Path
+from typing import Any
 
 from PIL import Image, ImageChops, ImageStat
 
@@ -17,6 +19,8 @@ class CritiqueAgent:
         """Create a critique agent with lazy CLIP loading for fast mock-mode tests."""
 
         self.clip_model_name = clip_model_name
+        self._clip_model: Any | None = None
+        self._clip_processor: Any | None = None
 
     def execute(
         self,
@@ -60,12 +64,27 @@ class CritiqueAgent:
             import torch
             from transformers import CLIPModel, CLIPProcessor
 
-            model = CLIPModel.from_pretrained(self.clip_model_name)
-            processor = CLIPProcessor.from_pretrained(self.clip_model_name)
+            allow_download = os.getenv("CLIP_ALLOW_DOWNLOAD", "false").lower() in {"1", "true", "yes"}
+            if self._clip_model is None or self._clip_processor is None:
+                self._clip_model = CLIPModel.from_pretrained(
+                    self.clip_model_name,
+                    local_files_only=not allow_download,
+                )
+                self._clip_processor = CLIPProcessor.from_pretrained(
+                    self.clip_model_name,
+                    local_files_only=not allow_download,
+                )
             image = Image.open(image_path).convert("RGB")
-            inputs = processor(text=[prompt], images=image, return_tensors="pt", padding=True)
+            inputs = self._clip_processor(
+                text=[prompt],
+                images=image,
+                return_tensors="pt",
+                padding=True,
+                truncation=True,
+                max_length=77,
+            )
             with torch.no_grad():
-                outputs = model(**inputs)
+                outputs = self._clip_model(**inputs)
             image_embeds = outputs.image_embeds
             text_embeds = outputs.text_embeds
             similarity = torch.nn.functional.cosine_similarity(image_embeds, text_embeds).item()

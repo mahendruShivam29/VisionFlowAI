@@ -3,9 +3,18 @@
 from __future__ import annotations
 
 import csv
+import site
+import sys
 from pathlib import Path
 
 from PIL import Image, ImageDraw
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+USER_SITE = site.getusersitepackages()
+if USER_SITE and USER_SITE not in sys.path:
+    sys.path.append(USER_SITE)
 
 from orchestrator import Orchestrator
 
