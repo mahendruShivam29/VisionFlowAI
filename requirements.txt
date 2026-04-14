@@ -1,0 +1,6 @@
+pydantic>=2.7
+openai>=1.30
+replicate>=0.25
+Pillow>=10.0
+torch>=2.2
+transformers>=4.41

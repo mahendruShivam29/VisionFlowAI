@@ -1,0 +1,14 @@
+sdd.md
+rubrik.md
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+outputs/
+test_assets/
+human_evaluation_results.csv
+human_evaluation_results.md
