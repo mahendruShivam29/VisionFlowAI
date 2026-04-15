@@ -8,7 +8,7 @@
     "moon",
     "night sky"
   ],
-  "scene_description": "The scene appears outdoors with a darker foreground and sky-like upper region, suggesting a low-light landscape.",
+  "scene_description": "Local fallback approximation: The scene appears outdoors with a darker foreground and sky-like upper region, suggesting a low-light landscape.",
   "qa_answers": {
     "Is this indoors or outdoors?": "Outdoors.",
     "Are there any people?": "No people are clearly visible."

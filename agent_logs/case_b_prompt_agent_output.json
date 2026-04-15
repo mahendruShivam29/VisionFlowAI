@@ -1,9 +1,11 @@
 {
-  "refined_prompt": "Transform this cat image into a vivid cyberpunk digital painting with neon lighting, glowing eyes, futuristic city background, holographic accents, high contrast, and cinematic detail while preserving the cat as the main subject. Use bold artistic style cues, distinctive color palette, cinematic contrast, and unmistakable stylized visual treatment. Preserve the original composition, subject identity, spatial layout, and important objects. Visual anchors: A balanced landscape image dominated by mixed color, red, blue tones with sky, cat, fur. The scene appears to contain a warm-toned central animal/face-like subject against a simpler background. Key visible elements: sky, cat, fur, eyes. Avoid distorted text, watermarks, and artifacts.",
+  "refined_prompt": "Transform this cat image into a vivid cyberpunk digital painting with neon lighting, glowing eyes, futuristic city background, holographic accents, high contrast, and cinematic detail while preserving the cat as the main subject. Use bold artistic style cues, distinctive color palette, cinematic contrast, and unmistakable stylized visual treatment. Preserve the original composition, subject identity, spatial layout, and important objects. Visual anchors: A balanced landscape image dominated by mixed color, red, blue tones with sky, cat, fur. Local fallback approximation: The scene appears to contain a warm-toned central animal/face-like subject against a simpler background. Key visible elements: sky, cat, fur, eyes. Avoid distorted text, watermarks, and artifacts.",
   "transformation_mode": "stylization",
   "added_visual_details": [
     "A balanced landscape image dominated by mixed color, red, blue tones with sky, cat, fur.",
-    "The scene appears to contain a warm-toned central animal/face-like subject against a simpler background.",
+    "Local fallback approximation: The scene appears to contain a warm-toned central animal/face-like subject against a simpler background.",
     "Key visible elements: sky, cat, fur, eyes."
-  ]
+  ],
+  "prompt_was_ambiguous": false,
+  "clarification_strategy": "Instruction was specific enough; no clarification needed."
 }

@@ -6,7 +6,7 @@
     "fur",
     "eyes"
   ],
-  "scene_description": "The scene appears to contain a warm-toned central animal/face-like subject against a simpler background.",
+  "scene_description": "Local fallback approximation: The scene appears to contain a warm-toned central animal/face-like subject against a simpler background.",
   "qa_answers": {
     "What animal is this?": "A cat-like animal.",
     "What color is its fur?": "The fur/subject appears warm tan or beige."

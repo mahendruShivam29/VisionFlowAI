@@ -6,7 +6,7 @@
     "road",
     "buildings"
   ],
-  "scene_description": "The scene appears outdoors with a bright upper sky region, darker road/foreground, colored vehicle-like regions, and blocky background structures.",
+  "scene_description": "Local fallback approximation: The scene appears outdoors with a bright upper sky region, darker road/foreground, colored vehicle-like regions, and blocky background structures.",
   "qa_answers": {
     "How many cars are visible?": "4 distinct car-like colored regions are visible.",
     "What is the weather like?": "Clear or fair, based on the bright blue upper sky region."

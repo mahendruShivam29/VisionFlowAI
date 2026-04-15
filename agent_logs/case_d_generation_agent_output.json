@@ -1,8 +1,12 @@
 {
-  "generated_image_path": "generated_outputs\\gen_image_1776221571738.png",
+  "generated_image_path": "generated_outputs\\gen_image_1776222557698.png",
   "generation_config": {
-    "prompt_used": "make it better. Improve lighting, detail, contrast, color balance, sharpness, and overall image quality while preserving the scene. Preserve the original composition, subject identity, spatial layout, and important objects. Visual anchors: A balanced landscape image dominated by neutral gray tones with main subject, background, landscape frame. The image has balanced exposure, landscape framing, and dominant neutral gray colors. Key visible elements: main subject, background, landscape frame. Ambiguity warning: user instruction was vague, so the prompt was enriched using visual context and defaulted to enhancement. Avoid distorted text, watermarks, and artifacts.",
+    "prompt_used": "make it better. Improve lighting, detail, contrast, color balance, sharpness, and overall image quality while preserving the scene. Preserve the original composition, subject identity, spatial layout, and important objects. Visual anchors: A balanced landscape image dominated by neutral gray tones with main subject, background, landscape frame. Local fallback approximation: The image has balanced exposure, landscape framing, and dominant neutral gray colors. Key visible elements: main subject, background, landscape frame. Ambiguity warning: user instruction was vague, so the prompt was enriched using visual context and defaulted to enhancement. Avoid distorted text, watermarks, and artifacts.",
+    "final_prompt_used_after_revision": "",
     "model": "mock-sdxl-img2img",
+    "seed": 12345,
+    "negative_prompt": "watermark, text artifacts, distorted anatomy, blurry, low quality",
+    "retry_count": 0,
     "inference_steps": 50,
     "denoising_strength": 0.55,
     "mode": "enhancement"

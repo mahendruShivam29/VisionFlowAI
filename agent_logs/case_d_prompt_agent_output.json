@@ -1,10 +1,12 @@
 {
-  "refined_prompt": "make it better. Improve lighting, detail, contrast, color balance, sharpness, and overall image quality while preserving the scene. Preserve the original composition, subject identity, spatial layout, and important objects. Visual anchors: A balanced landscape image dominated by neutral gray tones with main subject, background, landscape frame. The image has balanced exposure, landscape framing, and dominant neutral gray colors. Key visible elements: main subject, background, landscape frame. Ambiguity warning: user instruction was vague, so the prompt was enriched using visual context and defaulted to enhancement. Avoid distorted text, watermarks, and artifacts.",
+  "refined_prompt": "make it better. Improve lighting, detail, contrast, color balance, sharpness, and overall image quality while preserving the scene. Preserve the original composition, subject identity, spatial layout, and important objects. Visual anchors: A balanced landscape image dominated by neutral gray tones with main subject, background, landscape frame. Local fallback approximation: The image has balanced exposure, landscape framing, and dominant neutral gray colors. Key visible elements: main subject, background, landscape frame. Ambiguity warning: user instruction was vague, so the prompt was enriched using visual context and defaulted to enhancement. Avoid distorted text, watermarks, and artifacts.",
   "transformation_mode": "enhancement",
   "added_visual_details": [
     "A balanced landscape image dominated by neutral gray tones with main subject, background, landscape frame.",
-    "The image has balanced exposure, landscape framing, and dominant neutral gray colors.",
+    "Local fallback approximation: The image has balanced exposure, landscape framing, and dominant neutral gray colors.",
     "Key visible elements: main subject, background, landscape frame.",
     "Ambiguity warning: user instruction was vague, so the prompt was enriched using visual context and defaulted to enhancement."
-  ]
+  ],
+  "prompt_was_ambiguous": true,
+  "clarification_strategy": "Auto-enriched from visual context because the instruction was vague."
 }
