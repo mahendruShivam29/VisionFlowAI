@@ -173,6 +173,30 @@ python run_workflow.py `
 
 The generated image path is printed at the end of the run and is also stored inside the JSON result.
 
+### Option C: Run The Notebook In Google Colab
+
+Use [VisionFlowAI_Part3.ipynb](D:/Workspace/SJSU/GenAI/Lab-2/Part-3/VisionFlowAI_Part3.ipynb) for the demo/report notebook.
+
+1. Open Google Colab.
+2. Upload `VisionFlowAI_Part3.ipynb`.
+3. Runtime -> Run all.
+4. Keep the default no-key settings for a reliable demo:
+
+```text
+MOCK_MODE=true
+CLIP_ALLOW_DOWNLOAD=false
+```
+
+The notebook installs dependencies in Colab, creates the three required test images, runs all agents, saves generated images to `generated_outputs/`, and saves per-agent JSON logs plus human evaluation reports to `agent_logs/`.
+
+For a custom uploaded image demo, scroll to the final "Optional Real Image Demo" cell, set:
+
+```python
+RUN_CUSTOM_DEMO = True
+```
+
+Then run that cell and upload an image when Colab prompts for it.
+
 ## Expected Outputs
 
 After a successful run, these files/directories are produced:

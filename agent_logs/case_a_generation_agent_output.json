@@ -1,5 +1,5 @@
 {
-  "generated_image_path": "generated_outputs\\gen_image_1776213077228.png",
+  "generated_image_path": "generated_outputs\\gen_image_1776213399560.png",
   "generation_config": {
     "prompt_used": "Just recreate this exactly. Preserve the original composition, subject identity, spatial layout, and important objects. Use these visual anchors: A balanced landscape image with visible subject detail. The image appears to be a landscape composition with balanced exposure and visible street, cars, buildings. Key visible elements: street, cars, buildings, road. Create a coherent, high-quality image with natural lighting, clean detail, and no unwanted artifacts.",
     "model": "mock-sdxl-img2img",
