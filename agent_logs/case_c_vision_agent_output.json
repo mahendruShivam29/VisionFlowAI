@@ -1,12 +1,16 @@
 {
-  "caption": "Minimalist landscape with mountains and a moon.",
+  "caption": "A dark landscape image dominated by blue, neutral gray, mixed color tones with sky, vegetation, ground.",
   "objects": [
+    "sky",
+    "vegetation",
+    "ground",
     "mountains",
-    "moon"
+    "moon",
+    "night sky"
   ],
-  "scene_description": "A simple outdoor scene with two triangular mountains on a dark background and a full moon in the sky.",
+  "scene_description": "The scene appears outdoors with a darker foreground and sky-like upper region, suggesting a low-light landscape.",
   "qa_answers": {
-    "Is this indoors or outdoors?": "outdoors",
-    "Are there any people?": "no"
+    "Is this indoors or outdoors?": "Outdoors.",
+    "Are there any people?": "No people are clearly visible."
   }
 }

@@ -1,0 +1,15 @@
+{
+  "visual_relevance_score": 9,
+  "prompt_faithfulness_score": 8,
+  "transformation_quality": 6,
+  "clip_similarity_score": 0.423,
+  "automatic_signal_type": "heuristic_proxy",
+  "critique_summary": "The generated image has pixel similarity 0.92, color similarity 0.02, brightness shift 0.08, and change level 0.08 for enhancement mode. Automatic signal (heuristic_proxy) is 0.423.",
+  "decision": "ACCEPT",
+  "human_evaluation_template": {
+    "visual_relevance_1_to_5": 5,
+    "prompt_faithfulness_1_to_5": 4,
+    "transformation_quality_1_to_5": 3,
+    "human_notes": "The output keeps the original layout while improving contrast and visibility; more natural detail would make the enhancement stronger. Warning handled: Ambiguity warning: user instruction was vague, so the prompt was enriched using visual context and defaulted to enhancement."
+  }
+}

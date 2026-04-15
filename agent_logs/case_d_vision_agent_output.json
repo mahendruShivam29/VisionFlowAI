@@ -1,0 +1,13 @@
+{
+  "caption": "A balanced landscape image dominated by neutral gray tones with main subject, background, landscape frame.",
+  "objects": [
+    "main subject",
+    "background",
+    "landscape frame"
+  ],
+  "scene_description": "The image has balanced exposure, landscape framing, and dominant neutral gray colors.",
+  "qa_answers": {
+    "Is the image high quality?": "Visible cues suggest main subject, background, landscape frame.",
+    "What are the dominant colors?": "Visible cues suggest main subject, background, landscape frame."
+  }
+}

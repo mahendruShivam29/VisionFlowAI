@@ -1,11 +1,9 @@
 {
-  "refined_prompt": "Recreate this street scene as a polished, realistic daytime image while preserving the four visible cars, road, buildings, lawn, and clear weather.",
-  "transformation_mode": "enhancement",
+  "refined_prompt": "Recreate this street scene as a polished, realistic daytime image while preserving the four visible cars, road, buildings, lawn, and clear weather. Keep composition and subject identity consistent while producing a clean high-quality visual variation. Preserve the original composition, subject identity, spatial layout, and important objects. Visual anchors: A balanced landscape image dominated by blue, neutral gray, green tones with sky, cars, road. The scene appears outdoors with a bright upper sky region, darker road/foreground, colored vehicle-like regions, and blocky background structures. Key visible elements: sky, cars, road, buildings. Avoid distorted text, watermarks, and artifacts.",
+  "transformation_mode": "variation",
   "added_visual_details": [
-    "Highlight the sunlight casting soft shadows of the cars on the road.",
-    "Enhance the texture and details of the building facades to reflect a clean and modern architectural style.",
-    "Include realistic details of pavement textures and road markings.",
-    "Add depth to the scene with more detailed greenery on the lawn, creating a lush appearance.",
-    "Ensure the sky is a vivid blue with minimal clouds to maintain the clear weather condition."
+    "A balanced landscape image dominated by blue, neutral gray, green tones with sky, cars, road.",
+    "The scene appears outdoors with a bright upper sky region, darker road/foreground, colored vehicle-like regions, and blocky background structures.",
+    "Key visible elements: sky, cars, road, buildings."
   ]
 }

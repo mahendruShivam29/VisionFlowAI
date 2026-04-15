@@ -1,8 +1,8 @@
 {
-  "generated_image_path": "generated_outputs/gen_image_1776218720027.png",
+  "generated_image_path": "generated_outputs\\gen_image_1776221571646.png",
   "generation_config": {
-    "prompt_used": "Transform the dark minimalist mountain landscape into a vibrant, golden-hour scene featuring warm sunlight, an orange sky glow, vivid and saturated colors with detailed mountain terrain, and a prominently visible atmospheric moon.",
-    "model": "stability-ai/sdxl:392573f9ac8c7f6153001c5ef00fc9fd6611ad361e3ead07160116747895d7ad",
+    "prompt_used": "Strongly enhance this dark outdoor mountain landscape into a bright golden-hour scene with warm sunlight, orange sky glow, vivid saturated colors, detailed terrain, and a visible atmospheric moon. Improve lighting, detail, contrast, color balance, sharpness, and overall image quality while preserving the scene. Preserve the original composition, subject identity, spatial layout, and important objects. Visual anchors: A dark landscape image dominated by blue, neutral gray, mixed color tones with sky, vegetation, ground. The scene appears outdoors with a darker foreground and sky-like upper region, suggesting a low-light landscape. Key visible elements: sky, vegetation, ground, mountains, moon, night sky. Avoid distorted text, watermarks, and artifacts.",
+    "model": "mock-sdxl-img2img",
     "inference_steps": 50,
     "denoising_strength": 0.55,
     "mode": "enhancement"

@@ -1,11 +1,14 @@
 {
-  "caption": "A simple illustration of a cat face.",
+  "caption": "A balanced landscape image dominated by mixed color, red, blue tones with sky, cat, fur.",
   "objects": [
-    "cat"
+    "sky",
+    "cat",
+    "fur",
+    "eyes"
   ],
-  "scene_description": "The image shows a minimalist illustration of a cat's face with whiskers, ears, and a pink nose.",
+  "scene_description": "The scene appears to contain a warm-toned central animal/face-like subject against a simpler background.",
   "qa_answers": {
-    "What animal is this?": "Cat",
-    "What color is its fur?": "Brown"
+    "What animal is this?": "A cat-like animal.",
+    "What color is its fur?": "The fur/subject appears warm tan or beige."
   }
 }
