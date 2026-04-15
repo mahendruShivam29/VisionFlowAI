@@ -8,6 +8,13 @@ from typing import Any
 from agents import CritiqueAgent, GenerationAgent, PromptAgent, VisionAgent
 from models import WorkflowState
 
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    load_dotenv = None
+else:
+    load_dotenv()
+
 
 class Orchestrator:
     """Fulfills requirement 3.5: coordinates agent communication and failure handling."""

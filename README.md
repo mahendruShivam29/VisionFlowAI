@@ -7,6 +7,11 @@ This project implements a modular image understanding and generation workflow fo
 3. `GenerationAgent` runs true image-to-image generation through Replicate SDXL when configured, or a deterministic local mock transformation when `MOCK_MODE=true`.
 4. `CritiqueAgent` evaluates visual relevance, prompt faithfulness, transformation quality, and an automatic CLIP-style signal.
 
+The project has two entry points:
+
+- `test_suite.py`: a rubric/demo runner that creates three sample images and validates all required cases.
+- `run_workflow.py`: a real-user CLI for running the pipeline on any local image.
+
 ## Fresh Setup
 
 Use Python 3.10 or newer. The project was written as plain Python modules, so no package build step is required.
@@ -84,6 +89,8 @@ With `MOCK_MODE=true`, the generation agent creates deterministic transformed im
 
 ## Run End to End
 
+### Option A: Run the Rubric Demo
+
 Run the required three-case test suite:
 
 ```powershell
@@ -112,6 +119,45 @@ Vision Understanding -> Prompt Engineering -> Image Generation -> Critique/Evalu
 ```
 
 `CritiqueAgent` uses CLIP automatically when the model is already cached locally. Set `CLIP_ALLOW_DOWNLOAD=true` to allow HuggingFace model downloads; otherwise it uses a deterministic fallback signal so offline grading remains reliable.
+
+### Option B: Run On Your Own Image
+
+Use `run_workflow.py` when a real person wants to transform their own image.
+
+Example in mock/offline mode:
+
+```powershell
+python run_workflow.py `
+  --image "C:\path\to\your\image.jpg" `
+  --instruction "Make this look like a cyberpunk digital painting" `
+  --question "What is the main subject?" `
+  --question "What is the background setting?"
+```
+
+The command requires:
+
+- `--image`: path to an existing local image
+- `--instruction`: what transformation the user wants
+- `--question`: visual questions for the vision agent; pass at least two
+
+By default, the CLI writes the full final state to:
+
+```text
+workflow_result.json
+```
+
+To choose a different result file:
+
+```powershell
+python run_workflow.py `
+  --image "C:\path\to\your\image.jpg" `
+  --instruction "Enhance the lighting and make colors warmer" `
+  --question "Is this indoors or outdoors?" `
+  --question "Are there any people?" `
+  --output-json "my_result.json"
+```
+
+The generated image path is printed at the end of the run and is also stored inside the JSON result.
 
 ## Expected Outputs
 
@@ -173,7 +219,7 @@ The model used is `openai/clip-vit-base-patch32`.
 
 ## Run a Single Custom Example
 
-You can call the orchestrator directly from a short Python script:
+Developers can also call the orchestrator directly from a short Python script:
 
 ```python
 from orchestrator import Orchestrator

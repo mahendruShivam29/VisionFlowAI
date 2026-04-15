@@ -12,3 +12,4 @@ outputs/
 test_assets/
 human_evaluation_results.csv
 human_evaluation_results.md
+workflow_result.json
