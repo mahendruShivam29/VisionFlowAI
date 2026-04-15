@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 from typing import Any
 
 from agents import CritiqueAgent, GenerationAgent, PromptAgent, VisionAgent
@@ -25,6 +26,7 @@ class Orchestrator:
         prompt_agent: PromptAgent | None = None,
         generation_agent: GenerationAgent | None = None,
         critique_agent: CritiqueAgent | None = None,
+        log_dir: str | None = "agent_logs",
     ) -> None:
         """Create an orchestrator with independently replaceable agent modules."""
 
@@ -32,6 +34,9 @@ class Orchestrator:
         self.prompt_agent = prompt_agent or PromptAgent()
         self.generation_agent = generation_agent or GenerationAgent()
         self.critique_agent = critique_agent or CritiqueAgent()
+        self.log_dir = Path(log_dir) if log_dir else None
+        if self.log_dir:
+            self.log_dir.mkdir(parents=True, exist_ok=True)
 
     def run(
         self,
@@ -39,6 +44,7 @@ class Orchestrator:
         instruction: str,
         questions: list[str],
         verbose: bool = True,
+        run_id: str = "workflow",
     ) -> WorkflowState:
         """Run Vision -> Prompt -> Generation -> Critique and return final state."""
 
@@ -50,21 +56,21 @@ class Orchestrator:
 
         try:
             state.vision_context = self.vision_agent.execute(image_path, questions)
-            self._log("Vision Agent Output", state.vision_context.model_dump(), verbose)
+            self._log("Vision Agent Output", state.vision_context.model_dump(), verbose, run_id)
         except Exception as exc:
             message = str(exc)
             state.error_log.append(message)
-            self._log("Error", {"message": message}, verbose)
+            self._log("Error", {"message": message}, verbose, run_id)
             return state
 
         try:
             state.prompt_data = self.prompt_agent.execute(instruction, state.vision_context)
-            self._log("Prompt Agent Output", state.prompt_data.model_dump(), verbose)
+            self._log("Prompt Agent Output", state.prompt_data.model_dump(), verbose, run_id)
         except Exception as exc:
             message = f"Prompt agent failed; falling back to enhancement mode: {exc}"
             state.error_log.append(message)
             state.prompt_data = self.prompt_agent._execute_with_rules("", state.vision_context)
-            self._log("Prompt Agent Output", state.prompt_data.model_dump(), verbose)
+            self._log("Prompt Agent Output", state.prompt_data.model_dump(), verbose, run_id)
 
         try:
             state.generation_data = self.generation_agent.execute(
@@ -72,11 +78,11 @@ class Orchestrator:
                 state.prompt_data.refined_prompt,
                 state.prompt_data.transformation_mode,
             )
-            self._log("Generation Agent Output", state.generation_data.model_dump(), verbose)
+            self._log("Generation Agent Output", state.generation_data.model_dump(), verbose, run_id)
         except Exception as exc:
             message = f"Generation failed; retrying with sanitized prompt: {exc}"
             state.error_log.append(message)
-            self._log("Generation Retry", {"message": message}, verbose)
+            self._log("Generation Retry", {"message": message}, verbose, run_id)
             try:
                 state.generation_data = self.generation_agent.execute(
                     image_path,
@@ -84,11 +90,11 @@ class Orchestrator:
                     state.prompt_data.transformation_mode,
                     simplified_retry=True,
                 )
-                self._log("Generation Agent Output", state.generation_data.model_dump(), verbose)
+                self._log("Generation Agent Output", state.generation_data.model_dump(), verbose, run_id)
             except Exception as retry_exc:
                 retry_message = f"Generation retry failed: {retry_exc}"
                 state.error_log.append(retry_message)
-                self._log("Error", {"message": retry_message}, verbose)
+                self._log("Error", {"message": retry_message}, verbose, run_id)
                 return state
 
         try:
@@ -107,18 +113,22 @@ class Orchestrator:
                     "human_evaluation_template": human_template.model_dump(),
                 },
                 verbose,
+                run_id,
             )
         except Exception as exc:
             message = f"Critique agent failed: {exc}"
             state.error_log.append(message)
-            self._log("Error", {"message": message}, verbose)
+            self._log("Error", {"message": message}, verbose, run_id)
 
         return state
 
-    @staticmethod
-    def _log(label: str, payload: dict[str, Any], verbose: bool) -> None:
+    def _log(self, label: str, payload: dict[str, Any], verbose: bool, run_id: str) -> None:
         """Print intermediate outputs in JSON to show explicit agent communication."""
 
         if verbose:
             print(f"[{label}]")
             print(json.dumps(payload, indent=2))
+        if self.log_dir:
+            safe_label = label.lower().replace(" ", "_").replace("[", "").replace("]", "")
+            log_path = self.log_dir / f"{run_id}_{safe_label}.json"
+            log_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")

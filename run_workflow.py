@@ -38,7 +38,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-json",
-        default="workflow_result.json",
+        default="agent_logs/workflow_result.json",
         help="Where to write the final WorkflowState JSON.",
     )
     parser.add_argument(

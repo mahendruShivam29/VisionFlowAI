@@ -1,0 +1,10 @@
+{
+  "generated_image_path": "generated_outputs\\gen_image_1776213077264.png",
+  "generation_config": {
+    "prompt_used": "Make this look like a cyberpunk digital painting. Preserve the original composition, subject identity, spatial layout, and important objects. Use these visual anchors: A balanced landscape image with visible subject detail. The image appears to be a landscape composition with balanced exposure and visible cat, fur, eyes. Key visible elements: cat, fur, eyes, background. Create a coherent, high-quality image with natural lighting, clean detail, and no unwanted artifacts.",
+    "model": "mock-sdxl-img2img",
+    "inference_steps": 50,
+    "denoising_strength": 0.6,
+    "mode": "stylization"
+  }
+}

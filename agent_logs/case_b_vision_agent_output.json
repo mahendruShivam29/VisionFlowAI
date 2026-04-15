@@ -1,0 +1,14 @@
+{
+  "caption": "A balanced landscape image with visible subject detail.",
+  "objects": [
+    "cat",
+    "fur",
+    "eyes",
+    "background"
+  ],
+  "scene_description": "The image appears to be a landscape composition with balanced exposure and visible cat, fur, eyes.",
+  "qa_answers": {
+    "What animal is this?": "A cat.",
+    "What color is its fur?": "The fur appears warm and neutral in tone."
+  }
+}

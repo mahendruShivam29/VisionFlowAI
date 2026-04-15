@@ -1,0 +1,14 @@
+{
+  "caption": "A balanced landscape image with visible subject detail.",
+  "objects": [
+    "street",
+    "cars",
+    "buildings",
+    "road"
+  ],
+  "scene_description": "The image appears to be a landscape composition with balanced exposure and visible street, cars, buildings.",
+  "qa_answers": {
+    "How many cars are visible?": "Several cars are visible or suggested by the scene.",
+    "What is the weather like?": "The weather is not directly visible; lighting appears balanced."
+  }
+}

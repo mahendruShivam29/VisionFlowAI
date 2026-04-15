@@ -1,0 +1,9 @@
+{
+  "refined_prompt": "Make this look like a cyberpunk digital painting. Preserve the original composition, subject identity, spatial layout, and important objects. Use these visual anchors: A balanced landscape image with visible subject detail. The image appears to be a landscape composition with balanced exposure and visible cat, fur, eyes. Key visible elements: cat, fur, eyes, background. Create a coherent, high-quality image with natural lighting, clean detail, and no unwanted artifacts.",
+  "transformation_mode": "stylization",
+  "added_visual_details": [
+    "A balanced landscape image with visible subject detail.",
+    "The image appears to be a landscape composition with balanced exposure and visible cat, fur, eyes.",
+    "Key visible elements: cat, fur, eyes, background."
+  ]
+}

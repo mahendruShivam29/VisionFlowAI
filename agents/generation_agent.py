@@ -23,7 +23,7 @@ class GenerationAgent:
         "variation": 0.8,
     }
 
-    def __init__(self, output_dir: str = "outputs", mock_mode: bool | None = None) -> None:
+    def __init__(self, output_dir: str = "generated_outputs", mock_mode: bool | None = None) -> None:
         """Create a generation agent with mock mode defaulting to env MOCK_MODE=true."""
 
         self.output_dir = Path(output_dir)
@@ -120,7 +120,7 @@ class GenerationAgent:
         return output_path
 
     def _next_output_path(self, suffix: str) -> Path:
-        """Create a unique output path under /outputs."""
+        """Create a unique output path under /generated_outputs."""
 
         timestamp = int(time.time() * 1000)
         return self.output_dir / f"gen_image_{timestamp}{suffix}"

@@ -44,7 +44,7 @@ def create_sample_images(asset_dir: Path) -> dict[str, Path]:
 def run_test_suite(verbose: bool = True) -> list[dict[str, str]]:
     """Run captioning/VQA, stylization, and enhancement examples end to end."""
 
-    images = create_sample_images(Path("test_assets"))
+    images = create_sample_images(Path("input_images"))
     cases = [
         {
             "case_id": "A",
@@ -77,6 +77,7 @@ def run_test_suite(verbose: bool = True) -> list[dict[str, str]]:
             case["instruction"],
             case["questions"],
             verbose=verbose,
+            run_id=f"case_{case['case_id'].lower()}",
         )
         metrics = state.evaluation_metrics
         human_template = state.human_evaluation_template
@@ -111,8 +112,10 @@ def run_test_suite(verbose: bool = True) -> list[dict[str, str]]:
 def write_reports(rows: list[dict[str, str]]) -> None:
     """Write CSV and Markdown reports for human graders."""
 
-    csv_path = Path("human_evaluation_results.csv")
-    md_path = Path("human_evaluation_results.md")
+    report_dir = Path("agent_logs")
+    report_dir.mkdir(parents=True, exist_ok=True)
+    csv_path = report_dir / "human_evaluation_results.csv"
+    md_path = report_dir / "human_evaluation_results.md"
     with csv_path.open("w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=list(rows[0].keys()))
         writer.writeheader()

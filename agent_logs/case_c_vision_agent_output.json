@@ -1,0 +1,16 @@
+{
+  "caption": "A dark landscape image with visible subject detail.",
+  "objects": [
+    "shadows",
+    "low light",
+    "landscape",
+    "sky",
+    "terrain",
+    "horizon"
+  ],
+  "scene_description": "The image appears to be a landscape composition with dark exposure and visible shadows, low light, landscape.",
+  "qa_answers": {
+    "Is this indoors or outdoors?": "Outdoors.",
+    "Are there any people?": "No people are clearly visible."
+  }
+}

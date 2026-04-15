@@ -12,6 +12,20 @@ The project has two entry points:
 - `test_suite.py`: a rubric/demo runner that creates three sample images and validates all required cases.
 - `run_workflow.py`: a real-user CLI for running the pipeline on any local image.
 
+## Submission Layout
+
+The requested Part 3 submission layout is:
+
+```text
+Part_3
+├── VisionFlowAI_Part3.ipynb
+├── input_images/
+├── generated_outputs/
+└── agent_logs/
+```
+
+In this repository, the project root is the `Part_3` equivalent. The Python modules are kept as supporting source files, while `VisionFlowAI_Part3.ipynb` is the standalone notebook version for submission/review.
+
 ## Fresh Setup
 
 Use Python 3.10 or newer. The project was written as plain Python modules, so no package build step is required.
@@ -85,7 +99,7 @@ MOCK_MODE=true
 CLIP_ALLOW_DOWNLOAD=false
 ```
 
-With `MOCK_MODE=true`, the generation agent creates deterministic transformed images locally under `outputs/`. The real SDXL image-to-image code remains implemented, but it is not called.
+With `MOCK_MODE=true`, the generation agent creates deterministic transformed images locally under `generated_outputs/`. The real SDXL image-to-image code remains implemented, but it is not called.
 
 ## Run End to End
 
@@ -163,12 +177,11 @@ The generated image path is printed at the end of the run and is also stored ins
 
 After a successful run, these files/directories are produced:
 
-- `test_assets/`: generated local input images for the three use cases
-- `outputs/`: generated output images
-- `human_evaluation_results.csv`: machine-readable evaluation table
-- `human_evaluation_results.md`: human-readable evaluation table
+- `input_images/`: generated local input images for the three use cases
+- `generated_outputs/`: generated output images
+- `agent_logs/`: per-agent JSON outputs and final human-evaluation reports
 
-These generated artifacts are intentionally ignored by git.
+The previous `test_assets/`, `outputs/`, and root-level result filenames are no longer used by the primary workflow.
 
 ## Optional: Run With Real Providers
 
