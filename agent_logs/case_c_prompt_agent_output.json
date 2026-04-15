@@ -1,9 +1,9 @@
 {
-  "refined_prompt": "Enhance the lighting, make it golden hour, and make the colors pop. Preserve the original composition, subject identity, spatial layout, and important objects. Use these visual anchors: A dark landscape image with visible subject detail. The image appears to be a landscape composition with dark exposure and visible shadows, low light, landscape. Key visible elements: shadows, low light, landscape, sky, terrain, horizon. Create a coherent, high-quality image with natural lighting, clean detail, and no unwanted artifacts.",
+  "refined_prompt": "A visually enriched landscape image captured during the golden hour, where the soft, warm lighting enhances the scene and makes the colors more vibrant.",
   "transformation_mode": "enhancement",
   "added_visual_details": [
-    "A dark landscape image with visible subject detail.",
-    "The image appears to be a landscape composition with dark exposure and visible shadows, low light, landscape.",
-    "Key visible elements: shadows, low light, landscape, sky, terrain, horizon."
+    "golden hour lighting",
+    "vibrant colors",
+    "enhanced natural details"
   ]
 }

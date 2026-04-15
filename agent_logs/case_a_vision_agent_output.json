@@ -1,14 +1,13 @@
 {
-  "caption": "A balanced landscape image with visible subject detail.",
+  "caption": "A simple illustration of cars and buildings.",
   "objects": [
-    "street",
     "cars",
     "buildings",
     "road"
   ],
-  "scene_description": "The image appears to be a landscape composition with balanced exposure and visible street, cars, buildings.",
+  "scene_description": "The image shows a row of four colored cars parked on a dark road, with tall rectangular buildings and a green lawn in the background under a clear blue sky.",
   "qa_answers": {
-    "How many cars are visible?": "Several cars are visible or suggested by the scene.",
-    "What is the weather like?": "The weather is not directly visible; lighting appears balanced."
+    "How many cars are visible?": "There are four cars visible.",
+    "What is the weather like?": "The weather appears to be clear."
   }
 }

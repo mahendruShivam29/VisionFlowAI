@@ -1,10 +1,10 @@
 {
-  "visual_relevance_score": 7,
-  "prompt_faithfulness_score": 9,
-  "transformation_quality": 6,
-  "clip_similarity_score": 0.2242204248905182,
-  "critique_summary": "The image preserves source structure while applying enhancement. Automatic signal: 0.224.",
-  "decision": "ACCEPT",
+  "visual_relevance_score": 3,
+  "prompt_faithfulness_score": 2,
+  "transformation_quality": 5,
+  "clip_similarity_score": 0.247,
+  "critique_summary": "The generated image lacks the vibrant colors and warm lighting typical of a golden hour setting. The scene is too dark, and the simplicity does not convey the richness requested in the prompt.",
+  "decision": "REVISE",
   "human_evaluation_template": {
     "visual_relevance_1_to_5": null,
     "prompt_faithfulness_1_to_5": null,

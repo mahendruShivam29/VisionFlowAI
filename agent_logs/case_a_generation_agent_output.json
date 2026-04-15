@@ -1,10 +1,10 @@
 {
-  "generated_image_path": "generated_outputs\\gen_image_1776213984251.png",
+  "generated_image_path": "generated_outputs/gen_image_1776217175218.png",
   "generation_config": {
-    "prompt_used": "Just recreate this exactly. Preserve the original composition, subject identity, spatial layout, and important objects. Use these visual anchors: A balanced landscape image with visible subject detail. The image appears to be a landscape composition with balanced exposure and visible street, cars, buildings. Key visible elements: street, cars, buildings, road. Create a coherent, high-quality image with natural lighting, clean detail, and no unwanted artifacts.",
-    "model": "mock-sdxl-img2img",
+    "prompt_used": "A simple illustration of four cars parked on a dark road with tall rectangular buildings and a green lawn in the background under a clear blue sky.",
+    "model": "stability-ai/sdxl:392573f9ac8c7f6153001c5ef00fc9fd6611ad361e3ead07160116747895d7ad",
     "inference_steps": 50,
-    "denoising_strength": 0.8,
-    "mode": "variation"
+    "denoising_strength": 0.3,
+    "mode": "enhancement"
   }
 }
