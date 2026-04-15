@@ -2,8 +2,8 @@
   "visual_relevance_score": 8,
   "prompt_faithfulness_score": 9,
   "transformation_quality": 6,
-  "clip_similarity_score": 0.442,
-  "critique_summary": "The image preserves source structure while applying stylization. Automatic signal: 0.442.",
+  "clip_similarity_score": 0.19210010766983032,
+  "critique_summary": "The image preserves source structure while applying stylization. Automatic signal: 0.192.",
   "decision": "ACCEPT",
   "human_evaluation_template": {
     "visual_relevance_1_to_5": null,
