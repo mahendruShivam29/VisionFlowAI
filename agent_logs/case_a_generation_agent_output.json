@@ -1,10 +1,10 @@
 {
-  "generated_image_path": "generated_outputs/gen_image_1776217175218.png",
+  "generated_image_path": "generated_outputs/gen_image_1776218487395.png",
   "generation_config": {
-    "prompt_used": "A simple illustration of four cars parked on a dark road with tall rectangular buildings and a green lawn in the background under a clear blue sky.",
+    "prompt_used": "Recreate this street scene as a polished, realistic daytime image while preserving the four visible cars, road, buildings, lawn, and clear weather.",
     "model": "stability-ai/sdxl:392573f9ac8c7f6153001c5ef00fc9fd6611ad361e3ead07160116747895d7ad",
     "inference_steps": 50,
-    "denoising_strength": 0.3,
+    "denoising_strength": 0.55,
     "mode": "enhancement"
   }
 }

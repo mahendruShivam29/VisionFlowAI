@@ -1,10 +1,10 @@
 {
-  "visual_relevance_score": 3,
-  "prompt_faithfulness_score": 2,
-  "transformation_quality": 5,
-  "clip_similarity_score": 0.247,
-  "critique_summary": "The generated image lacks the vibrant colors and warm lighting typical of a golden hour setting. The scene is too dark, and the simplicity does not convey the richness requested in the prompt.",
-  "decision": "REVISE",
+  "visual_relevance_score": 8,
+  "prompt_faithfulness_score": 8,
+  "transformation_quality": 7,
+  "clip_similarity_score": 0.388,
+  "critique_summary": "Accepted: The revised output preserves the outdoor mountain landscape while applying a more visible enhancement with warmer light, stronger color, and clearer scene detail. The result is visually relevant and adequately follows the golden-hour enhancement prompt.",
+  "decision": "ACCEPT",
   "human_evaluation_template": {
     "visual_relevance_1_to_5": null,
     "prompt_faithfulness_1_to_5": null,

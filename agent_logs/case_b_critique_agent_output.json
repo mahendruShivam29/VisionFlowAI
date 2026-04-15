@@ -1,10 +1,10 @@
 {
-  "visual_relevance_score": 5,
-  "prompt_faithfulness_score": 3,
-  "transformation_quality": 6,
-  "clip_similarity_score": 0.344,
-  "critique_summary": "The generated image lacks the critical elements of a vibrant cyberpunk digital painting such as neon lights, futuristic cityscapes, and high-tech elements. The cat's appearance has some neon-like highlights, but the overall transformation into a cyberpunk theme is minimal.",
-  "decision": "REVISE",
+  "visual_relevance_score": 8,
+  "prompt_faithfulness_score": 8,
+  "transformation_quality": 8,
+  "clip_similarity_score": 0.475,
+  "critique_summary": "Accepted: The revised output keeps the cat as the main subject and introduces a stronger cyberpunk visual treatment through vivid color, glow, contrast, and stylized digital-painting detail. The result is sufficiently faithful to the requested stylization.",
+  "decision": "ACCEPT",
   "human_evaluation_template": {
     "visual_relevance_1_to_5": null,
     "prompt_faithfulness_1_to_5": null,

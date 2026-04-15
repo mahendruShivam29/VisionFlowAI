@@ -1,16 +1,12 @@
 {
-  "caption": "A dark landscape image with visible subject detail.",
+  "caption": "Minimalist landscape with mountains and a moon.",
   "objects": [
-    "shadows",
-    "low light",
-    "landscape",
-    "sky",
-    "terrain",
-    "horizon"
+    "mountains",
+    "moon"
   ],
-  "scene_description": "The image appears to be a landscape composition with dark exposure and visible shadows, low light, landscape.",
+  "scene_description": "A simple outdoor scene with two triangular mountains on a dark background and a full moon in the sky.",
   "qa_answers": {
-    "Is this indoors or outdoors?": "Outdoors.",
-    "Are there any people?": "No people are clearly visible."
+    "Is this indoors or outdoors?": "outdoors",
+    "Are there any people?": "no"
   }
 }

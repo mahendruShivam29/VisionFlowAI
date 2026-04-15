@@ -1,10 +1,10 @@
 {
-  "generated_image_path": "generated_outputs/gen_image_1776217257092.png",
+  "generated_image_path": "generated_outputs/gen_image_1776218720027.png",
   "generation_config": {
-    "prompt_used": "A visually enriched landscape image captured during the golden hour, where the soft, warm lighting enhances the scene and makes the colors more vibrant.",
+    "prompt_used": "Transform the dark minimalist mountain landscape into a vibrant, golden-hour scene featuring warm sunlight, an orange sky glow, vivid and saturated colors with detailed mountain terrain, and a prominently visible atmospheric moon.",
     "model": "stability-ai/sdxl:392573f9ac8c7f6153001c5ef00fc9fd6611ad361e3ead07160116747895d7ad",
     "inference_steps": 50,
-    "denoising_strength": 0.3,
+    "denoising_strength": 0.55,
     "mode": "enhancement"
   }
 }

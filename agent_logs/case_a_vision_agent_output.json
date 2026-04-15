@@ -1,13 +1,15 @@
 {
-  "caption": "A simple illustration of cars and buildings.",
+  "caption": "A simplified illustration of a street with cars and buildings.",
   "objects": [
     "cars",
     "buildings",
-    "road"
+    "road",
+    "sky",
+    "grass"
   ],
-  "scene_description": "The image shows a row of four colored cars parked on a dark road, with tall rectangular buildings and a green lawn in the background under a clear blue sky.",
+  "scene_description": "The image shows an abstract view of a street with five cars in different colors parked in front of tall, rectangular buildings. The sky is clear and the scene appears calm.",
   "qa_answers": {
-    "How many cars are visible?": "There are four cars visible.",
-    "What is the weather like?": "The weather appears to be clear."
+    "How many cars are visible?": "Five",
+    "What is the weather like?": "Clear"
   }
 }

@@ -1,11 +1,12 @@
 {
-  "refined_prompt": "Transform the landscape image with the cat into a vibrant cyberpunk digital painting. Incorporate neon lights, futuristic cityscapes, and high-tech elements to create a visually striking scene.",
+  "refined_prompt": "Transform the minimalist illustration of a cat's face into a vivid cyberpunk digital painting, featuring neon lighting, glowing eyes, a futuristic cityscape in the background, and holographic accents. Maintain high contrast and cinematic detail while ensuring the cat remains the focal point.",
   "transformation_mode": "stylization",
   "added_visual_details": [
-    "neon lights",
-    "futuristic cityscapes",
-    "high-tech elements",
-    "vibrant color palette",
-    "glowing accents"
+    "neon lighting",
+    "glowing eyes",
+    "futuristic city background",
+    "holographic accents",
+    "high contrast",
+    "cinematic details"
   ]
 }

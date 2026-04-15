@@ -1,0 +1,10 @@
+{
+  "generated_image_path": "generated_outputs/gen_image_1776218496768.png",
+  "generation_config": {
+    "prompt_used": "Recreate this street scene as a polished, realistic daytime image while preserving the four visible cars, road, buildings, lawn, and clear weather. Make the enhancement visibly stronger: bright golden-hour light, warm sunlight, vivid colors, high detail, and clear atmospheric glow. Address this critique: The generated image retains the basic elements of the prompt including four cars, buildings, and the road. However, the realism and polish are lacking, as the image still has a digital and simplistic appearance. The weather conditions are clear in both images, but the buildings and cars need more detail to match the prompt's request for a realistic scene.",
+    "model": "stability-ai/sdxl:392573f9ac8c7f6153001c5ef00fc9fd6611ad361e3ead07160116747895d7ad",
+    "inference_steps": 50,
+    "denoising_strength": 0.67,
+    "mode": "enhancement"
+  }
+}

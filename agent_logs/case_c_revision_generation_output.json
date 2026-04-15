@@ -1,0 +1,10 @@
+{
+  "generated_image_path": "generated_outputs/gen_image_1776218809250.png",
+  "generation_config": {
+    "prompt_used": "Transform the dark minimalist mountain landscape into a vibrant, golden-hour scene featuring warm sunlight, an orange sky glow, vivid and saturated colors with detailed mountain terrain, and a prominently visible atmospheric moon. Make the enhancement visibly stronger: bright golden-hour light, warm sunlight, vivid colors, high detail, and clear atmospheric glow. Address this critique: The transformation lacks the vibrant, golden-hour elements specified in the prompt. It retains a dark palette and does not incorporate the warm sunlight, orange sky glow, or saturated colors. The atmospheric moon is present but not emphasized in a vibrant way.",
+    "model": "stability-ai/sdxl:392573f9ac8c7f6153001c5ef00fc9fd6611ad361e3ead07160116747895d7ad",
+    "inference_steps": 50,
+    "denoising_strength": 0.67,
+    "mode": "enhancement"
+  }
+}

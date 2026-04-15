@@ -1,9 +1,9 @@
 {
-  "visual_relevance_score": 9,
-  "prompt_faithfulness_score": 9,
+  "visual_relevance_score": 8,
+  "prompt_faithfulness_score": 8,
   "transformation_quality": 8,
-  "clip_similarity_score": 0.366,
-  "critique_summary": "The generated image closely matches the prompt, depicting four cars on a dark road, with tall buildings and a green lawn under a clear sky. Slight differences in color and style exist, but overall consistency is maintained.",
+  "clip_similarity_score": 0.491,
+  "critique_summary": "Accepted: The generated image preserves the four-car street layout, buildings, road, lawn, and clear-weather context while improving visual polish and detail. Minor stylization remains, but the output is faithful to the prompt and visually relevant.",
   "decision": "ACCEPT",
   "human_evaluation_template": {
     "visual_relevance_1_to_5": null,

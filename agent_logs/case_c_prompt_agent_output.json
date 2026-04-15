@@ -1,9 +1,15 @@
 {
-  "refined_prompt": "A visually enriched landscape image captured during the golden hour, where the soft, warm lighting enhances the scene and makes the colors more vibrant.",
+  "refined_prompt": "Transform the dark minimalist mountain landscape into a vibrant, golden-hour scene featuring warm sunlight, an orange sky glow, vivid and saturated colors with detailed mountain terrain, and a prominently visible atmospheric moon.",
   "transformation_mode": "enhancement",
   "added_visual_details": [
-    "golden hour lighting",
-    "vibrant colors",
-    "enhanced natural details"
+    "golden-hour lighting",
+    "warm sunlight",
+    "orange sky glow",
+    "vivid saturated colors",
+    "detailed mountain terrain",
+    "visible atmospheric moon",
+    "soft shadows and highlights",
+    "rich color gradients",
+    "enhanced contrast"
   ]
 }

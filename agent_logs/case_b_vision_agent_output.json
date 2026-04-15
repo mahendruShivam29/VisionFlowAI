@@ -1,14 +1,11 @@
 {
-  "caption": "A balanced landscape image with visible subject detail.",
+  "caption": "A simple illustration of a cat face.",
   "objects": [
-    "cat",
-    "fur",
-    "eyes",
-    "background"
+    "cat"
   ],
-  "scene_description": "The image appears to be a landscape composition with balanced exposure and visible cat, fur, eyes.",
+  "scene_description": "The image shows a minimalist illustration of a cat's face with whiskers, ears, and a pink nose.",
   "qa_answers": {
-    "What animal is this?": "A cat.",
-    "What color is its fur?": "The fur appears warm and neutral in tone."
+    "What animal is this?": "Cat",
+    "What color is its fur?": "Brown"
   }
 }
